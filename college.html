@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Football</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(to right, #000000, #ffd700);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 40px;
+      background-color: white;
+      flex: 1;
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #000000;
+      text-align: center;
+    }
+
+    .conference-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .conference-card {
+      background-color: #000000;
+      color: #ffd700;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .conference-card:hover {
+      background-color: #ffd700;
+      color: #000000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>College Football</h1>
+    <p>Welcome to the heart of the game — stats, teams, and traditions.</p>
+  </header>
+
+  <main>
+  <h2>Explore</h2>
+  <div class="conference-grid">
+    <a href="conferences.html" class="conference-card">View All Conferences</a>
+    <a href="nfl.html" class="conference-card">Go to NFL</a>
+    <a href="t25.html" class="conference-card">Top 25 Standings</a>
+  </div>
+</main>
+
+  <footer>
+    &copy; 2025 College Football Central. All rights reserved.
+  </footer>
+
+</body>
+</html>
