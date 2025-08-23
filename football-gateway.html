@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Football Gateway</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to right, #0b1f3a, #1c2e4a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #f4d03f;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #dcdcdc;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 40px;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    a.button {
+      text-decoration: none;
+      background-color: #f4d03f;
+      color: #0b1f3a;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #ffd700;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Football Central</h1>
+  <p>Select your destination below</p>
+
+  <div class="button-container">
+    <a href="college.html" class="button">College Football</a>
+    <a href="nfl.html" class="button">NFL</a>
+  </div>
+
+</body>
+</html>
